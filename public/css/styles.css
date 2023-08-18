@@ -1,0 +1,287 @@
+body{
+    background-color: #AFE69C;
+    margin: 0;
+    font-family: Helvetica, Verdana, sans-serif;
+}
+
+header{
+    background-color: #7CD473;
+    font-family: Verdana;
+}
+
+header h1{
+    margin:0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 4%;
+    background-color: inherit;
+    margin-bottom:2%;
+}
+
+div#form-group{
+    float: left;
+    width: 15%;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+
+aside.form{
+    float: left;
+    padding: 5%;
+    margin: 1%;
+    margin-top: 0;
+    margin-right: 3%;
+    margin-bottom: 10%;
+    border-radius: 25px;
+    background-color: #D4E6B5;
+}
+
+aside.form h1{
+    margin:0%;
+}
+
+div#db{
+    display: inline-block;
+    width: 78%;
+}
+
+div#mainBody .label-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+div.label-input{
+    padding-bottom: 5%;
+}
+
+div.label-input label{
+    display:block;
+    text-align: left;
+    width: 100%;
+}
+
+div.label-input select{
+    width:90%;
+}
+
+.align-right {
+    display: flex;
+    justify-content:flex-end;
+}
+
+legend{
+    font: 1.5rem 'Arial';
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #D4E6B5;
+    border: 1px solid #D4E6B5;
+    border-radius: 25px;
+
+}
+
+fieldset{
+    margin-top: 5%;
+    border: 2px solid black;
+}
+
+h3{
+    margin: 0;
+}
+
+input.form{
+    margin-top: 10%;
+}
+
+form#addingForm legend{
+    font-size: 1.5rem;
+}
+
+input#button{
+    margin-top: 5%;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+}
+
+td.info{
+    width:20%;
+}
+
+tr h2{
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+tr h2#PlantName{
+    margin-bottom: 5%;
+}
+
+h2.top-subtitle{
+    padding-top:2%;
+    margin-bottom:2%;
+}
+
+h2.bottom-subtitle{
+    margin-top:2%;
+}
+
+span.label{
+    display: inline-block;
+    padding:8px;
+    margin-right: 20px;
+    font-size: 16pt;
+    background-color: #A2E09B;
+    border-radius: 15px;
+    color: black;
+    margin: 6px;
+}
+
+table{
+    table-layout: auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd){
+    background-color: #CBBC8E;
+}
+
+table tr:nth-child(even){
+    background-color: #D0C298;
+}
+
+td.info{
+    padding-left: 2%;
+
+}
+
+td.tags{
+    padding-bottom: 2%;
+}
+
+th.header{
+    padding-top: 2%;
+}
+
+table tr:first-child .info{
+    border-radius: 40px 0 0 0px;
+}
+
+table tr:first-child .tags{
+    border-radius: 0 40px 0px 0px;
+}
+
+table tr:last-child .info{
+    border-radius: 0px 0 0 40px;
+}
+
+table tr:last-child .tags{
+    border-radius: 0px 0 40px 0px;
+}
+
+span.hidden, .hidden{
+    display: none;
+}
+
+.filterHeader{
+    margin: 0;
+    float: left;
+    width: 68%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 25px;
+    background-color: #D0C298;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.formError{
+    margin: 0;
+    color: Red;
+}
+
+#sorting{
+    margin-top: 5%;
+    height: 100%;
+    padding-left:12%;
+}
+
+.select{
+    height: 25px;
+    border-radius: 5px;
+    font-size:16px;
+}
+
+div.filterHeader > h2{
+    display: inline-block;
+}
+
+div#MainBody404{
+    width:1000px;
+    margin:0 auto;
+}
+
+div#MainBody404 h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+@media print{
+
+    @page{
+        margin:0.5cm;
+    }
+
+    body{
+        font-size:12px;
+    }
+
+    span.label{
+        font-size:12px;
+        padding: 0;
+    }
+
+    header, aside.form{
+        display: none;
+    }
+
+    table, td.tags, td.info{
+        break-inside: avoid;
+    }
+
+    div#db{
+        display: block;
+        width: 110%;
+    }
+
+    td.info{
+        width:30%;
+    }
+
+    div{
+        break-inside: avoid;
+    }
+
+    tr{
+        border-collapse: separate;
+        border-color: black;
+        border-width: 1px;
+        border-style: dashed;
+    }
+
+    td{
+        border-collapse: separate;
+        border-color: black;
+        border-width: 1px;
+        border-style: dashed;
+    }
+
+    td.tags{
+        padding-left:2%;
+    }
+}
